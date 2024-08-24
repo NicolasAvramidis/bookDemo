@@ -1,38 +1,135 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  background: #3c678a;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  display: inline;
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus, 
+select:focus {
+  outline: none;
+  border: 2px solid #3c678a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userLink {
+  font-style: italic;
+  color: #3c678a;
+}
+
+.input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-area form {
+  width: 100%;
+  max-width: 1050px;
+  margin: 20px auto;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.search-area button {
+  background: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-area button:hover {
+  background: #495057;
+}
+
+.search-area button.random {
+  background: #c25749;
+  margin-left: 80px;
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.UserID {
+  color: #b5b9bd;
+  font-size: 0.8em;
+}
+
+.list {
+  display: grid;
+  margin: 20px 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-container {
+  max-width: 300px;
+  min-width: 250px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc {
+  padding: 15px;
+}
+
+.desc h2 {
+  font-size: 1.2em;    
+  font-weight: 400;
+}
+
+.desc h3 {
+  color: #6c757d;
+  font-size: 1em;
+  padding: 10px 0;
+}
+
+.desc p {
+  color: #6c757d;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+select {
+  background-color: #343a40;
+  color: #fff;
+  height: 32px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
 }
